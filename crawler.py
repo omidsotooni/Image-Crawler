@@ -127,6 +127,6 @@ if __name__ == '__main__':
 
 
 
-# exec this command: python crawler.py --keyword datascience --count 3
-# exec this command: python crawler.py --keyword datamining --count 3
-# exec this command: python crawler.py --keyword Machinelearning --count 3
+# exec this command: python crawler.py --keyword datascience --count 2
+# exec this command: python crawler.py --keyword datamining --count 5
+# exec this command: python crawler.py --keyword Machinelearning --count 10
