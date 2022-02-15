@@ -1,3 +1,4 @@
+from distutils import command
 import os
 import json
 import urllib.request
@@ -60,7 +61,7 @@ class Crawler:
         chrome_options.add_argument('headless')
         chrome_options.add_argument("--disable-gpu")
         chrome_options.add_argument("lang=ko_KR")
-        chrome_options.add_argument("user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36")
+        chrome_options.add_argument("user-agent=Mozilla/93.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36")
         # ... etc
         # ============================================= #
 
@@ -123,3 +124,9 @@ if __name__ == '__main__':
 
     newCrawler = Crawler(args.keyword, args.count)  # create new crawler
     newCrawler.run()
+
+
+
+# exec this command: python crawler.py --keyword datascience --count 3
+# exec this command: python crawler.py --keyword datamining --count 3
+# exec this command: python crawler.py --keyword Machinelearning --count 3
